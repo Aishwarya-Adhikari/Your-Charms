@@ -1,0 +1,126 @@
+.home {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem;
+  background-color: #ff5733;
+  min-height: 85vh;
+  gap: 3rem;
+}
+
+ Changed hero-content
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem; 
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  white-space: nowrap; 
+}
+
+.hero-text p {
+  font-size: 1.3rem; 
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 1.8rem; /* Made social media icons bigger */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: #ffd700;
+}
+
+.shop-btn {
+  background-color: #f5f5dc;
+  color: #333;
+  padding: 0.9rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-btn:hover {
+  background-color: #e0e0c0;
+  transform: translateY(-2px);
+}
+
+.hero-images {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px; 
+}
+
+.hero-images .photo {
+  width: 280px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Staggered positioning - first image higher, second lower */
+.hero-images .p1 {
+  transform: translateY(-30px);
+}
+
+.hero-images .p2 {
+  transform: translateY(30px);
+}
+
+/* Hover effect on images */
+.hero-images .photo:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    white-space: normal;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero-images .p1,
+  .hero-images .p2 {
+    transform: translateY(0);
+  }
+}

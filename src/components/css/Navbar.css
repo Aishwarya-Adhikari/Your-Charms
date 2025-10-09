@@ -1,0 +1,55 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background-color: #f5f5dc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: #000;
+}
+
+.navbar .logo h2 {
+  font-size: 1.3rem; /* Made logo smaller */
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem; /* Made nav links bigger */
+  font-weight: 600; /* Made nav links bold */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ff6347;
+}
+
+/* Green button for Log In */
+.navbar .nav-links li.login-btn a {
+  background-color: #28a745;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li.login-btn a:hover {
+  background-color: #218838;
+}
