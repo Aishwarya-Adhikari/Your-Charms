@@ -60,4 +60,4 @@ const Register = ({ type }) => {
   )
 }
 
-export default Register
+export default Register;

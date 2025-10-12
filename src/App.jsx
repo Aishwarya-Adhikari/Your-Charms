@@ -86,9 +86,9 @@ function App() {
           <Route
             path="/about"
             element={
-              <MainLayout>
+              
                 <About />
-              </MainLayout>
+              
             }
           />
           <Route path="/contact" element={<ContactUs />} />
